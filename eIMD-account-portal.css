@@ -1,4 +1,6 @@
-.widget-area.before-header.before-header-widget-area {
+.widget-area.before-header.before-header-widget-area,
+#menu-footer,
+#ih-bug,{
     display:none;
 }
 
@@ -19,9 +21,7 @@
 @media print {
   
   #shiftnav-toggle-main, 
-  #menu-footer, 
-  aside.sidebar.sidebar-primary.widget-area,
-  #ih-bug {
+  aside.sidebar.sidebar-primary.widget-area {
         display:none;
   }
   
