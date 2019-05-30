@@ -1,0 +1,77 @@
+<h1>Hand Washing Audit</h1>
+<form id="eimdAudit" class="form-horizontal col-md-8">
+    <input type="hidden" id="eimdLogURL" value="https://script.google.com/macros/s/AKfycbzvXdTpzL-ZrEN1oGg-cTJflKCNoe-Q1t-wKjePNE_Kka6TQEgB/exec" />
+    <fieldset>
+        <!-- Select Basic -->
+        <div class="form-group">
+
+            <label class=" control-label" for="AH_facility">Facilty</label>
+            <div class="">
+                <select id="AH_facility" class="form-control" name="AH_facility">
+                    <option>Choose</option>
+                    <option value="Mesa">Mesa</option>
+                    <option value="Phoenix">Phoenix</option>
+                </select>
+            </div>
+        </div>
+        <!-- Multiple Radios (inline) -->
+        <div class="form-group">
+
+            <label class=" control-label" for="AH_discipline">Discipline</label>
+            <div class="">
+                <label class="radio-inline" for="AH_discipline-0">
+                    <input id="AH_discipline-0" name="AH_discipline" type="radio" value="Physician" />Physician</label>
+                <label class="radio-inline" for="AH_discipline-1">
+                    <input id="AH_discipline-1" name="AH_discipline" type="radio" value="Nurse" />Nurse</label>
+                <label class="radio-inline" for="AH_discipline-2">
+                    <input id="AH_discipline-2" name="AH_discipline" type="radio" value="Technician" />Technician</label>
+                <label class="radio-inline" for="AH_discipline-3">
+                    <input id="AH_discipline-3" name="AH_discipline" type="radio" value="Student" />Student</label>
+                <label class="radio-inline" for="AH_discipline-4">
+                    <input id="AH_discipline-4" name="AH_discipline" type="radio" value="Dietitian" />Dietitian</label>
+                <label class="radio-inline" for="AH_discipline-5">
+                    <input id="AH_discipline-5" name="AH_discipline" type="radio" value="Social Worker" />Social Worker</label>
+                <label class="radio-inline" for="AH_discipline-6">
+                    <input id="AH_discipline-6" name="AH_discipline" type="radio" value="Other" />Other</label>
+            </div>
+        </div>
+        <!-- Select Basic -->
+        <div class="form-group">
+
+            <label class=" control-label" for="AH_opportunity_type">Opportunity Type</label>
+            <div class="">
+                <select id="AH_opportunity_type" class="form-control" name="AH_opportunity_type">
+                    <option>Choose</option>
+                    <option value="Prior to touching a patient">1. Prior to touching a patient</option>
+                    <option value="Prior to aseptic procedures">2. Prior to aseptic procedures</option>
+                    <option value="After body fluid exposure risk">3. After body fluid exposure risk</option>
+                    <option value="After touching a patient">4. After touching a patient</option>
+                    <option value="After touching patient surroundings">5. After touching patient surroundings</option>
+                </select>
+            </div>
+        </div>
+        <!-- Multiple Radios (inline) -->
+        <div class="form-group">
+
+            <label class=" control-label" for="AH_opportunity_result">Opportunity Performed Correctly?</label>
+            <div class="">
+                <label class="radio-inline" for="AH_opportunity_result-0">
+                    <input id="AH_opportunity_result-0" name="AH_opportunity_result" type="radio" value="Yes" />Yes</label>
+                <label class="radio-inline" for="AH_opportunity_result-1">
+                    <input id="AH_opportunity_result-1" name="AH_opportunity_result" type="radio" value="No" />No</label>
+            </div>
+        </div>
+        <!-- Textarea -->
+        <div class="form-group">
+
+            <label class=" control-label" for="AH_description">Description of Result</label>
+            <div>
+                <textarea id="AH_description" class="form-control" name="AH_description"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button id="submit-form" name="submit-form" class="btn btn-primary">Save</button>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,307 @@
+<h1>PPE Audit</h1>
+<form id="eimdAudit" class="form-horizontal col-md-8">
+  <input type="hidden" id="eimdLogURL" value="https://script.google.com/a/einfectionmd.com/macros/s/AKfycbw1w1VZagb0RpGNpy0KMHqPmL-3K-2Z8eHj_eMb/exec" />
+    <fieldset>
+        <!-- Select Basic -->
+        <div class="form-group">
+
+            <label class="control-label" for="AH_facility">Facilty</label>
+            <div>
+                <select id="AH_facility" class="form-control" name="AH_facility">
+                    <option>Choose</option>
+                    <option value="Mesa">Mesa</option>
+                    <option value="Phoenix">Phoenix</option>
+                </select>
+            </div>
+        </div>
+        <!-- Multiple Radios (inline) -->
+        <div class="form-group">
+
+            <label class="control-label" for="AH_discipline">Discipline</label>
+            <div>
+                <label class="radio-inline" for="AH_discipline-0">
+                    <input id="AH_discipline-0" name="AH_discipline" type="radio" value="Physician" />Physician</label>
+                <label class="radio-inline" for="AH_discipline-1">
+                    <input id="AH_discipline-1" name="AH_discipline" type="radio" value="Nurse" />Nurse</label>
+                <label class="radio-inline" for="AH_discipline-2">
+                    <input id="AH_discipline-2" name="AH_discipline" type="radio" value="Technician" />Technician</label>
+                <label class="radio-inline" for="AH_discipline-3">
+                    <input id="AH_discipline-3" name="AH_discipline" type="radio" value="Student" />Student</label>
+                <label class="radio-inline" for="AH_discipline-4">
+                    <input id="AH_discipline-4" name="AH_discipline" type="radio" value="Dietitian" />Dietitian</label>
+                <label class="radio-inline" for="AH_discipline-5">
+                    <input id="AH_discipline-5" name="AH_discipline" type="radio" value="Social Worker" />Social Worker</label>
+                <label class="radio-inline" for="AH_discipline-6">
+                    <input id="AH_discipline-6" name="AH_discipline" type="radio" value="Other" />Other</label>
+            </div>
+        </div>
+        <!-- Multiple Radios (inline) -->
+        <!-- Select Basic -->
+<div class="form-group">
+  <label class="control-label" for="precaution">Type of Precaution?</label>
+  <div>
+    <select id="precaution" name="precaution" class="form-control">
+      <option>Choose</option>
+      <option value="Standard">Standard / No Special Precaution</option>
+      <option value="Contact">Contact</option>
+      <option value="Enteric">Contact / Enteric</option>
+      <option value="Droplet">Droplet</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="control-label" for="opportunity">Type of Opportunity?</label>
+  <div>
+    <select id="opportunity" name="opportunity" class="form-control">
+      <option>Choose</option>
+      <option value="Entry">Entry</option>
+      <option value="Exit">Exit</option>
+      <option value="In-room">In-room</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="control-label" for="hh-performed">Type of Hand Hygiene Performed?</label>
+  <div>
+    <select id="hh-performed" name="hh-performed" class="form-control">
+      <option>Choose</option>
+      <option value="Alcohol">Alcohol Rub</option>
+      <option value="Hand Washing">Hand Washing</option>
+      <option value="Not Observed">Not Observed / Staff in Room</option>
+      <option value="No HH Done">No HH done</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="control-label" for="indicated">Gown or Glove Indicated?</label>
+  <div>
+    <label class="radio-inline" for="indicated-0">
+      <input type="radio" name="indicated" id="indicated-0" value="Gown Only">
+      Gown Only
+    </label>
+    <label class="radio-inline" for="indicated-1">
+      <input type="radio" name="indicated" id="indicated-1" value="Glove Only">
+      Glove Only
+    </label>
+    <label class="radio-inline" for="indicated-2">
+      <input type="radio" name="indicated" id="indicated-2" value="Both">
+      Both
+    </label>
+    <label class="radio-inline" for="radios-3">
+      <input type="radio" name="indicated" id="indicated-3" value="None">
+      None
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="control-label" for="indication-used">Gown or Glove Used?</label>
+  <div>
+    <label class="radio-inline" for="indication-used-0">
+      <input type="radio" name="indication-used" id="indication-used-0" value="Gown Only">
+      Gown Only
+    </label>
+    <label class="radio-inline" for="indication-used-1">
+      <input type="radio" name="indication-used" id="indication-used-1" value="Glove Only">
+      Glove Only
+    </label>
+    <label class="radio-inline" for="indication-used-2">
+      <input type="radio" name="indication-used" id="indication-used-2" value="Both">
+      Both
+    </label>
+    <label class="radio-inline" for="indication-used-3">
+      <input type="radio" name="indication-used" id="indication-used-3" value="None">
+      None
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) / Correct Sign-->
+<div class="form-group">
+  <label class="control-label" for="sign-radios">Is correct isolation sign posted?</label>
+  <div>
+    <label class="radio-inline" for="sign-radios-0">
+      <input type="radio" name="sign-radios" id="sign-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="sign-radios-1">
+      <input type="radio" name="sign-radios" id="sign-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="sign-radios-2">
+      <input type="radio" name="sign-radios" id="sign-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+
+<!-- Multiple Radios (inline) / PPE Readiness -->
+<div class="form-group">
+  <label class="control-label" for="readiness-radios">Is PPE readily available?</label>
+  <div>
+    <label class="radio-inline" for="readiness-radios-0">
+      <input type="radio" name="readiness-radios" id="readiness-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="readiness-radios-1">
+      <input type="radio" name="readiness-radios" id="readiness-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="readiness-radios-2">
+      <input type="radio" name="readiness-radios" id="readiness-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+
+<!-- Multiple Radios (inline) / Correct Worn -->
+<div class="form-group">
+  <label class="control-label" for="worn-radios">Is correct PPE worn?</label>
+  <div>
+    <label class="radio-inline" for="worn-radios-0">
+      <input type="radio" name="worn-radios" id="worn-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="worn-radios-1">
+      <input type="radio" name="worn-radios" id="worn-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="worn-radios-2">
+      <input type="radio" name="worn-radios" id="worn-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) / Gown Donned -->
+<div class="form-group">
+  <label class="control-label" for="gowned-radios">Gown donned prior to room entry?</label>
+  <div>
+    <label class="radio-inline" for="gowned-radios-0">
+      <input type="radio" name="gowned-radios" id="gowned-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="gowned-radios-1">
+      <input type="radio" name="gowned-radios" id="gowned-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="gowned-radios-2">
+      <input type="radio" name="gowned-radios" id="gowned-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) / Gloves Donned -->
+
+<div class="form-group">
+  <label class="control-label" for="gloved-radios">Gloves donned prior to room entry?</label>
+  <div>
+    <label class="radio-inline" for="gloved-radios-0">
+      <input type="radio" name="gloved-radios" id="gloved-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="gloved-radios-1">
+      <input type="radio" name="gloved-radios" id="gloved-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="gloved-radios-2">
+      <input type="radio" name="gloved-radios" id="gloved-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+
+<!-- Multiple Radios (inline) / Mask Donned -->
+<div class="form-group">
+  <label class="control-label" for="masked-radios">Mask donned prior to room entry?</label>
+  <div>
+    <label class="radio-inline" for="masked-radios-0">
+      <input type="radio" name="masked-radios" id="masked-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="masked-radios-1">
+      <input type="radio" name="masked-radios" id="masked-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="masked-radios-2">
+      <input type="radio" name="masked-radios" id="masked-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+
+
+<!-- Multiple Radios (inline) / Removed All -->
+<div class="form-group">
+  <label class="control-label" for="removed-radios">Removed all PPE on room exit?</label>
+  <div>
+    <label class="radio-inline" for="removed-radios-0">
+      <input type="radio" name="removed-radios" id="removed-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="removed-radios-1">
+      <input type="radio" name="removed-radios" id="removed-radios-1" value="No">
+      No
+    </label>
+    <label class="radio-inline" for="removed-radios-2">
+      <input type="radio" name="removed-radios" id="removed-radios-2" value="N/A">
+      Not Applicable
+    </label>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="control-label" for="hh-on-exit">HH performed on room exit after PPE removal?</label>
+  <div>
+    <select id="hh-on-exit" name="hh-on-exit" class="form-control">
+      <option>Choose</option>
+      <option value="Alcohol">Alcohol Rub</option>
+      <option value="Hand Washing">Hand Washing</option>
+      <option value="Unable to Observed">Unable to Observed</option>
+      <option value="No HH Done">No HH done</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) / Patient Education  -->
+<div class="form-group">
+  <label class="control-label" for="patient-ed-radios">Did patient receive education and documented in chart related to organism and isolation precautions?</label>
+  <div>
+    <label class="radio-inline" for="patient-ed-radios-0">
+      <input type="radio" name="patient-ed-radios" id="patient-ed-radios-0" value="Yes">
+      Yes
+    </label>
+    <label class="radio-inline" for="patient-ed-radios-1">
+      <input type="radio" name="patient-ed-radios" id="patient-ed-radios-1" value="No">
+      No
+    </label>
+  </div>
+</div>
+
+
+        <!-- Textarea -->
+        <div class="form-group">
+
+            <label class="control-label" for="AH_description">Description of Result</label>
+            <div>
+                <textarea id="AH_description" class="form-control" name="AH_description"></textarea></div>
+        </div>
+
+        <div class="form-group">
+            <button id="submit-form" name="submit-form" class="btn btn-primary">Save</button>
+        </div>
+    </fieldset>
+</form>
