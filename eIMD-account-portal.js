@@ -21,25 +21,25 @@ jQuery.fn.serializeObject = function()
 
 
 // Hand Washing Form 
-var hwForm = jQuery('#hwlog'),
-    hwUrl = 'https://script.google.com/macros/s/AKfycbzvXdTpzL-ZrEN1oGg-cTJflKCNoe-Q1t-wKjePNE_Kka6TQEgB/exec',
-    hwSubmitButton = jQuery('#submit-form'),
-    hwSubmitButtonLabel = jQuery('#submit-form').html(),
-    hwSubmitButtonLoading = "Please Wait...";
+var eIMDForm = jQuery('#hwlog'),
+    eIMDHwForm = 'https://script.google.com/macros/s/AKfycbzvXdTpzL-ZrEN1oGg-cTJflKCNoe-Q1t-wKjePNE_Kka6TQEgB/exec',
+    eIMDSubmitButton = jQuery('#submit-form'),
+    eIMDSubmitButtonLabel = jQuery('#submit-form').html(),
+    eIMDSubmitButtonLoading = "Please Wait...";
 
-jQuery(hwSubmitButton).on('click', function(e) {
+jQuery(eIMDSubmitButton).on('click', function(e) {
   e.preventDefault(); // Don't refresh the page on click
   
-  hwSubmitButton.html(hwSubmitButtonLoading); // Change the button label to indicate the form is being submitted
+  eIMDSubmitButton.html(eIMDSubmitButtonLoading); // Change the button label to indicate the form is being submitted
 
   var jqxhr = jQuery.ajax({
-    url: hwUrl,
+    url: eIMDHwForm,
     method: "GET",
     dataType: "json",
-    data: hwForm.serializeObject(),
+    data: eIMDForm.serializeObject(),
   }).success( function(){ 
       alert('Saved Record'); // Tell the user the form has submitted correctly.
-      hwForm.trigger('reset'); // Reset the form
-      hwSubmitButton.html(hwSubmitButtonLabel); // Reset the button label to the original value to indicate it is ready for another save
+      eIMDForm.trigger('reset'); // Reset the form
+      eIMDSubmitButton.html(eIMDSubmitButtonLabel); // Reset the button label to the original value to indicate it is ready for another save
     });
 });
